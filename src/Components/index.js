@@ -11,3 +11,4 @@ export { default as Theme } from "../CssAndThemes/theme";
 // export { default as Themes } from "../CssAndThemes/themes";
 export { default as Socials } from "./socialscomponent";
 export { default as Calendar } from "./calendar";
+export { default as Footer } from "./footer";

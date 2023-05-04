@@ -12,7 +12,7 @@ import {
 
   Logo,
   Home,
-  Socials,
+  Footer,
 
 } from "./Components";
 import Theme from "./CssAndThemes/theme";
@@ -29,8 +29,8 @@ function App() {
           <Route path="/youtubefetch" element={<YoutubeComponent />} />
           <Route path="/contactcomponents" element={<ContactComponents />} />
         </Routes>
-        <Socials> </Socials>
        
+       <Footer></Footer>
       </div>
     </MuiThemeProvider>
   );
