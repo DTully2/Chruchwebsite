@@ -1,0 +1,27 @@
+/* .logo {
+    background-image: url("https://i.imgur.com/GG7rFnD.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    height: 6em;
+    position: sticky;
+   
+  } */
+
+  .logo {
+    background: left / cover url('https://i.imgur.com/GG7rFnD.png');
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    /* font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Roboto', sans-serif;
+    color: #000000; */
+    /* text-shadow: #000 2px 2px 0.2rem; */
+}
+/* .site-title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 58px 0 10px;
+} */
