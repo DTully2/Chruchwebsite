@@ -1,6 +1,6 @@
 import "./App.css";
-import { Route, Link, Routes } from "react-router-dom";
-import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+
 import { MuiThemeProvider } from "@material-ui/core/styles";
 // import { MenuItem,Toolbar,AppBar,Typography } from "@mui/material";
 
@@ -9,11 +9,11 @@ import {
   NavBar,
   YoutubeComponent,
   ContactComponents,
-  Themes,
+
   Logo,
   Home,
   Socials,
-  Calendar,
+
 } from "./Components";
 import Theme from "./CssAndThemes/theme";
 

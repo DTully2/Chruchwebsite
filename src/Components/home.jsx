@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 // import axios from "axios";
 // import { Route, Link, Routes } from "react-router-dom";
 import { MuiThemeProvider } from "@material-ui/core/styles";
@@ -6,12 +6,9 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 
  import theme from "../CssAndThemes/theme";
  import {
-    Typography,
-    IconButton,
-    Button,
+ 
     Card,
-    Grid,
-    Item,
+  
   } from "@material-ui/core";
    import { Calendar } from ".";
 const Home = () => {

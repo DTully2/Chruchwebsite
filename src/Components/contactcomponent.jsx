@@ -1,22 +1,17 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Route, Link, Routes } from "react-router-dom";
+import React, {  } from "react";
+
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import {
   Typography,
-  IconButton,
-  Button,
-  Card,
-  Grid,
-  Item,
+
 } from "@material-ui/core";
 import theme from "../CssAndThemes/theme";
 import ContactUs from "./contactus";
-import { fetchFromApi } from "../utils/fetchFromApi";
+
 
 
 const ContactComponent = () => {
-  const [videos, setVideos] = useState([]);
+  // const [videos, setVideos] = useState([]);
   //don't leave use effect with out the fucntion inside of it
   // useEffect(() => {
   //   fetchFromApi(`search?part=snippet&q=${}`)

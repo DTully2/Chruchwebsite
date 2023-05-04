@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 
 const SearchBar = () => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { } from "react";
 
 import {  Link } from "react-router-dom";
 import { MuiThemeProvider } from "@material-ui/core/styles";
@@ -15,16 +15,16 @@ import {
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 
 const NavBar = () => {
-  const [anchorEl, setAnchorEl] = useState([]);
-  const [popupState, setOpen] = useState(false);
-  //don't leave use effect with out the fucntion inside of it
-  useEffect(() => {}, []);
-  const handleClick = (e) => {
-    setAnchorEl(e.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  // const [anchorEl, setAnchorEl] = useState([]);
+  // const [popupState, setOpen] = useState(false);
+  // //don't leave use effect with out the fucntion inside of it
+  // useEffect(() => {}, []);
+  // const handleClick = (e) => {
+  //   setAnchorEl(e.currentTarget);
+  // };
+  // const handleClose = () => {
+  //   setAnchorEl(null);
+  // };
   
   return (
     <MuiThemeProvider theme={theme} >
