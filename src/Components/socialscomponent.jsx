@@ -8,12 +8,11 @@ import {
   faFoursquare,
 } from "@fortawesome/free-brands-svg-icons";
 import  "../CssAndThemes/socials.css";
-import theme from "../CssAndThemes/theme";
-import { MuiThemeProvider } from "@material-ui/core/styles";
+
 const  Socials =()=> {
   useEffect(() => {}, []);
   return (
-    <MuiThemeProvider theme={theme}>
+    
     <div className="social-container">
       <h3>Follow us and the Presbyterian Church in Canada</h3>
       <a
@@ -44,7 +43,7 @@ const  Socials =()=> {
         <FontAwesomeIcon icon={faFoursquare}  size="2x" />
       </a>
     </div>
-    </MuiThemeProvider>
+    
   );
 };
 export default Socials;

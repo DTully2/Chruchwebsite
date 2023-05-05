@@ -87,6 +87,7 @@ export default createTheme({
       display: "flex",
       flex_direction: "column",
       overflow: "hidden",
+      text_align: "center",
     },
     card_content: {
       padding: "1rem",     

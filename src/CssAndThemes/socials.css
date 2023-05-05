@@ -6,7 +6,12 @@
   /* SOCIAL STUFF */
   .social-container {
     /* background: #eee; */
+    height: 80px;
+    margin-top: 1.5%;
     padding: 25px 50px;
+    font-family: sans-serif;
+    color:aliceblue;
+    background-color: #7f3434;
   }
   a.social {
     margin: 0 1rem;

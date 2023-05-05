@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
@@ -5,6 +6,12 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import "../CssAndThemes/calendar.css";
 import { rrulestr } from 'rrule';
 
+export let navigate = {
+  PREVIOUS: 'PREV',
+  NEXT: 'NEXT',
+  TODAY: 'TODAY',
+  DATE: 'DATE',
+};
 const localizer = momentLocalizer(moment);
 
 const rule = rrulestr('FREQ=WEEKLY;BYDAY=SU;WKST=SU;INTERVAL=1;COUNT=10');
@@ -34,11 +41,30 @@ const rule = rrulestr('FREQ=WEEKLY;BYDAY=SU;WKST=SU;INTERVAL=1;COUNT=10');
   ];
 
   const recurringEvents = rule.all().map((date) => ({
-    title: 'Chruch Service 10 am',
+    title: 'Service 10 am',
     start: moment(date).hour(10).toDate(),
     end: moment(date).hour(11).toDate(),
   }));
 
+  class CustomToolbar extends React.Component {
+    render() {
+        let { localizer: { messages }, label } = this.props
+        return(
+            <div className="rbc-toolbar">
+                <span className="rbc-btn-group">
+                    <button type="button" onClick={this.navigate.bind(null, navigate.PREVIOUS)}>Prev</button>
+                </span>
+                <span className="rbc-toolbar-label">{label}</span>
+                <span className="rbc-btn-group">
+                    <button type="button" onClick={this.navigate.bind(null, navigate.NEXT)}>Next</button>
+                </span>
+            </div>
+        )
+    }
+    navigate = action => {
+        this.props.onNavigate(action)
+    }
+}
 const MyCalendar = () => (
   <div>
     <Calendar
@@ -46,7 +72,10 @@ const MyCalendar = () => (
       events={[...events, ...recurringEvents]}
       startAccessor="start"
       endAccessor="end"
-      style={{ height: 400 }}
+       style={{ height: 300 , width: 400 }}
+       components={{       
+        toolbar: CustomToolbar,      
+      }}
     />
   </div>
 );

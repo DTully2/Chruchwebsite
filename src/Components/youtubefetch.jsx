@@ -27,7 +27,7 @@ const YoutubeFetch = () => {
   }, []);
   
   return (
-     <MuiThemeProvider theme={theme}>
+     
    
       <div class="main">
       <ul class="cards">
@@ -72,7 +72,7 @@ const YoutubeFetch = () => {
          </ul>
          </div>
       
-     </MuiThemeProvider>
+    
   );
 };
 export default YoutubeFetch;
